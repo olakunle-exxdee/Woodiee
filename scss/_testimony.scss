@@ -25,15 +25,81 @@
       border-top-right-radius: 80px;
       border-bottom-left-radius: 80px;
     }
-    .group:nth-child(3) {
-      background-image: url(../images/pexels-vecislavas-popa-1643383.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 240px;
-      height: 320px;
-      border-top-right-radius: 80px;
-      border-bottom-left-radius: 80px;
+    .people {
+      .fa-star {
+        font-size: 2rem;
+        color: #ffc107;
+      }
+      .text {
+        font-size: 1.4rem;
+        padding: 2rem 0;
+        color: #3e3f43;
+      }
+
+      .person {
+        display: flex;
+        align-items: center;
+        img {
+          width: 30px;
+          border-radius: 100px;
+        }
+
+        img + div {
+          margin-left: 1rem;
+        }
+        p {
+          font-size: 1.2rem;
+          color: #afafaf;
+          text-transform: capitalize;
+        }
+      }
+      .arrow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3rem;
+        p {
+          font-size: 1.2rem;
+          text-transform: capitalize;
+        }
+        .fa {
+          font-size: 2rem;
+        }
+        .previous {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          color: #3e3f43;
+          transition: color 300ms ease;
+          &:hover {
+            color: #c4c4c4;
+          }
+          .fa + p {
+            margin-left: 0.5rem;
+          }
+        }
+        .next {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          color: #3e3f43;
+          transition: color 300ms ease;
+          &:hover {
+            color: #c4c4c4;
+          }
+          p + .fa {
+            margin-left: 0.5rem;
+          }
+        }
+      }
+      .sub-people {
+        border: 1px solid #a8dcec;
+        border-top-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+        padding: 3rem 2rem;
+      }
     }
   }
 }

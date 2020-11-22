@@ -571,15 +571,116 @@ section {
   border-bottom-left-radius: 80px;
 }
 
-#testimony .testimony-container .group:nth-child(3) {
-  background-image: url(../images/pexels-vecislavas-popa-1643383.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 240px;
-  height: 320px;
+#testimony .testimony-container .people .fa-star {
+  font-size: 2rem;
+  color: #ffc107;
+}
+
+#testimony .testimony-container .people .text {
+  font-size: 1.4rem;
+  padding: 2rem 0;
+  color: #3e3f43;
+}
+
+#testimony .testimony-container .people .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#testimony .testimony-container .people .person img {
+  width: 30px;
+  border-radius: 100px;
+}
+
+#testimony .testimony-container .people .person img + div {
+  margin-left: 1rem;
+}
+
+#testimony .testimony-container .people .person p {
+  font-size: 1.2rem;
+  color: #afafaf;
+  text-transform: capitalize;
+}
+
+#testimony .testimony-container .people .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3rem;
+}
+
+#testimony .testimony-container .people .arrow p {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+#testimony .testimony-container .people .arrow .fa {
+  font-size: 2rem;
+}
+
+#testimony .testimony-container .people .arrow .previous {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: #3e3f43;
+  -webkit-transition: color 300ms ease;
+  transition: color 300ms ease;
+}
+
+#testimony .testimony-container .people .arrow .previous:hover {
+  color: #c4c4c4;
+}
+
+#testimony .testimony-container .people .arrow .previous .fa + p {
+  margin-left: 0.5rem;
+}
+
+#testimony .testimony-container .people .arrow .next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: #3e3f43;
+  -webkit-transition: color 300ms ease;
+  transition: color 300ms ease;
+}
+
+#testimony .testimony-container .people .arrow .next:hover {
+  color: #c4c4c4;
+}
+
+#testimony .testimony-container .people .arrow .next p + .fa {
+  margin-left: 0.5rem;
+}
+
+#testimony .testimony-container .people .sub-people {
+  border: 1px solid #a8dcec;
   border-top-right-radius: 80px;
   border-bottom-left-radius: 80px;
+  padding: 3rem 2rem;
 }
 
 @media only screen and (min-width: 37em) {

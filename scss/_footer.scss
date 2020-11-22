@@ -1,0 +1,88 @@
+.footer {
+  background: linear-gradient(#f2f2f2, #f7f7f766, #fff);
+
+  .subscribe {
+    display: grid;
+    margin: 0 auto;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    margin-bottom: 10rem;
+    padding-top: 2rem;
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    .content {
+      p:nth-child(1) {
+        font-weight: bolder;
+        font-size: 1.5rem;
+      }
+    }
+    .email {
+      margin-bottom: 1rem;
+      ::placeholder {
+        font-family: "Nunito", sans-serif;
+        color: #777777;
+      }
+      #sub {
+        // display: inline-block;
+        padding: 0.5rem 18rem 0.6rem 1rem;
+        border: 1px solid #daa520;
+      }
+
+      .sub-btn {
+        padding: 0.6rem 2rem 0.5rem 2rem;
+        background: #daa520;
+        border: none;
+        margin-left: rem;
+        cursor: pointer;
+        color: #fff;
+        font-weight: bold;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .wrapper {
+    display: grid;
+    margin: 0 auto;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border-top: 1px solid #8d8d8d;
+    padding-top: 2rem;
+    .list:nth-child(1) {
+      transform: translateY(-10%);
+    }
+    .list {
+      margin-bottom: 2rem;
+
+      .logo {
+        width: 150px;
+      }
+      a {
+        display: inline-block;
+        font-size: 1.4rem;
+        color: #8d8d8d;
+        text-transform: capitalize;
+        padding-top: 1rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        font-weight: bold;
+        color: #333333;
+      }
+    }
+  }
+
+  .year {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #8d8d8d;
+    font-weight: bold;
+    padding: 2rem 0;
+  }
+}

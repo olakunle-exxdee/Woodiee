@@ -62,7 +62,7 @@ section {
   border: 2px #a8dcec solid;
   background: #a8dcec;
   color: #fff;
-  padding: 0.5rem 2rem;
+  padding: 0.75rem 2rem;
   border-radius: 4px;
   cursor: pointer;
   -webkit-transition: all 300ms ease;
@@ -681,6 +681,118 @@ section {
   border-top-right-radius: 80px;
   border-bottom-left-radius: 80px;
   padding: 3rem 2rem;
+}
+
+.footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), color-stop(#f7f7f766), to(#fff));
+  background: linear-gradient(#f2f2f2, #f7f7f766, #fff);
+}
+
+.footer .subscribe {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  gap: 2rem;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 10rem;
+  padding-top: 2rem;
+}
+
+.footer .subscribe p {
+  font-size: 1.4rem;
+}
+
+.footer .subscribe .content p:nth-child(1) {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.footer .subscribe .email {
+  margin-bottom: 1rem;
+}
+
+.footer .subscribe .email ::-webkit-input-placeholder {
+  font-family: "Nunito", sans-serif;
+  color: #777777;
+}
+
+.footer .subscribe .email :-ms-input-placeholder {
+  font-family: "Nunito", sans-serif;
+  color: #777777;
+}
+
+.footer .subscribe .email ::-ms-input-placeholder {
+  font-family: "Nunito", sans-serif;
+  color: #777777;
+}
+
+.footer .subscribe .email ::placeholder {
+  font-family: "Nunito", sans-serif;
+  color: #777777;
+}
+
+.footer .subscribe .email #sub {
+  padding: 0.5rem 18rem 0.6rem 1rem;
+  border: 1px solid #daa520;
+}
+
+.footer .subscribe .email .sub-btn {
+  padding: 0.6rem 2rem 0.5rem 2rem;
+  background: #daa520;
+  border: none;
+  margin-left: rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.footer .wrapper {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  gap: 2rem;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  border-top: 1px solid #8d8d8d;
+  padding-top: 2rem;
+}
+
+.footer .wrapper .list:nth-child(1) {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.footer .wrapper .list {
+  margin-bottom: 2rem;
+}
+
+.footer .wrapper .list .logo {
+  width: 150px;
+}
+
+.footer .wrapper .list a {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #8d8d8d;
+  text-transform: capitalize;
+  padding-top: 1rem;
+}
+
+.footer .wrapper .list p {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #333333;
+}
+
+.footer .year {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #8d8d8d;
+  font-weight: bold;
+  padding: 2rem 0;
 }
 
 @media only screen and (min-width: 37em) {

@@ -547,6 +547,7 @@ section {
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   place-items: center;
+  margin-top: 4rem;
 }
 
 #testimony .testimony-container .group:nth-child(1) {
@@ -733,7 +734,7 @@ section {
 }
 
 .footer .subscribe .email #sub {
-  padding: 0.5rem 18rem 0.6rem 1rem;
+  padding: 0.5rem 8rem 0.6rem 1rem;
   border: 1px solid #daa520;
 }
 
@@ -746,6 +747,12 @@ section {
   color: #fff;
   font-weight: bold;
   margin-top: 1rem;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.footer .subscribe .email .sub-btn:hover {
+  opacity: 0.8;
 }
 
 .footer .wrapper {
@@ -778,6 +785,12 @@ section {
   color: #8d8d8d;
   text-transform: capitalize;
   padding-top: 1rem;
+  -webkit-transition: color 300ms ease;
+  transition: color 300ms ease;
+}
+
+.footer .wrapper .list a:hover {
+  color: #333333;
 }
 
 .footer .wrapper .list p {
@@ -957,6 +970,12 @@ section {
   }
   #category .category-container {
     margin-top: 8rem;
+  }
+  .footer .subscribe {
+    padding-bottom: 4rem;
+  }
+  .footer .subscribe .email #sub {
+    padding: 0.5rem 18rem 0.6rem 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

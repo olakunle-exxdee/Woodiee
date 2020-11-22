@@ -172,4 +172,16 @@
       margin-top: 8rem;
     }
   }
+
+  .footer {
+    .subscribe {
+      padding-bottom: 4rem;
+
+      .email {
+        #sub {
+          padding: 0.5rem 18rem 0.6rem 1rem;
+        }
+      }
+    }
+  }
 }

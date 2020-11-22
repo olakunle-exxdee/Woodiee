@@ -1,0 +1,39 @@
+#testimony {
+  .testimony-container {
+    display: grid;
+    margin: 0 auto;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    .group:nth-child(1) {
+      background-image: url(../images/product-7.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 240px;
+      height: 320px;
+      border-top-right-radius: 80px;
+      border-bottom-left-radius: 80px;
+    }
+    .group:nth-child(2) {
+      background-image: url(../images/pexels-vecislavas-popa-1643383.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 240px;
+      height: 320px;
+      border-top-right-radius: 80px;
+      border-bottom-left-radius: 80px;
+    }
+    .group:nth-child(3) {
+      background-image: url(../images/pexels-vecislavas-popa-1643383.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 240px;
+      height: 320px;
+      border-top-right-radius: 80px;
+      border-bottom-left-radius: 80px;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.container {
+  width: 100%;
+  padding: 0 2.4em;
+  max-width: 120em;
+  margin: 0 auto;
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 37em) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 50em) {
+    @content;
+  }
+}
+.btn {
+  border: 2px #a8dcec solid;
+  background: #a8dcec;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  &:hover {
+    opacity: 0.8;
+  }
+  @include desktop {
+    padding: 1rem 2rem;
+  }
+}
+
+.superheading {
+  .subheading {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3e3f43;
+
+    svg {
+      transition: fill 300ms ease;
+      &:hover {
+        fill: grayscale($color: #333);
+      }
+    }
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #222222;
+    opacity: 0.1;
+  }
+  .line {
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: #000;
+  }
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .line {
+      width: 30%;
+    }
+    h1 {
+      font-size: 6rem;
+    }
+    .subheading {
+      font-size: 3.5rem;
+    }
+  }
+}

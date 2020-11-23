@@ -109,3 +109,21 @@ links.forEach((link) => {
     });
   });
 });
+
+// animation gsap
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".a-hero", {
+  duration: 0.5,
+  opacity: 0,
+  x: -200,
+  ease: "power2.out",
+  stagger: 0.1,
+});
+gsap.from(".a-hero1", {
+  duration: 0.5,
+  opacity: 0,
+  x: 600,
+  ease: "power2.out",
+});

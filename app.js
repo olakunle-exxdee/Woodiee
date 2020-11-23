@@ -102,7 +102,7 @@ links.forEach((link) => {
     const element = document.getElementById(id);
 
     let position = element.offsetTop;
-
+    navbarTwo.classList.remove("open");
     window.scrollTo({
       left: 0,
       top: position,

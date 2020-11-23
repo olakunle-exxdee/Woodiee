@@ -975,7 +975,10 @@ section {
     padding-bottom: 4rem;
   }
   .footer .subscribe .email #sub {
-    padding: 0.5rem 18rem 0.6rem 1rem;
+    padding: 1rem 28rem 1.1rem 1rem;
+  }
+  .footer .subscribe .email .sub-btn {
+    padding: 1.1rem 2rem 1rem 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
